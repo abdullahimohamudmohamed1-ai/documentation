@@ -121,11 +121,39 @@ to a mailbox.
 Use a subdomain
 ~~~~~~~~~~~~~~~
 
+<<<<<<< b7330db363fc3764bb8b0e520b9a3cc1da8bf3f2
 After :ref:`creating a subdomain <domain-name/register/subdomains>`, go to the database and open
 the :guilabel:`Settings` app. Under the :guilabel:`Alias Domain` field, enter the subdomain (e.g.,
 `subdomain.yourdomain.com`), click :guilabel:`Create`, and then :guilabel:`Save`.
+||||||| d685b1d2a27c8884e5b87f8af1da926290ab7776
+You can create a subdomain (e.g., `subdomain.yourdomain.com`) to use as an alias domain for the
+database. It allows users to create records in the database from emails received on their
+`email@subdomain.yourdomain.com` alias.
+=======
+Create a dedicated subdomain (for example, ``mail.mydomain.com``) to :ref:`route incoming emails
+directly to your Odoo database via DNS records <dns_record_setup>`.
+>>>>>>> e9c3d4f2c4c886f0d7d85105f3e6064c4ccd2f06
 
+<<<<<<< b7330db363fc3764bb8b0e520b9a3cc1da8bf3f2
 .. _domain-name/register/mailbox/external:
+||||||| d685b1d2a27c8884e5b87f8af1da926290ab7776
+To do so, open the `database manager <https://www.odoo.com/my/databases>`_, click the
+:icon:`fa-gear` (:guilabel:`gear`) button next to the database name and select :icon:`fa-globe`
+:guilabel:`Domain Names`. Click :guilabel:`DNS`, then :guilabel:`Add DNS record` and select
+:guilabel:`CNAME`. Next, enter the desired subdomain in the :guilabel:`Name` field (e.g.,
+`subdomain`), the original database domain with a period at the end (e.g., `mycompany.odoo.com.`) in
+the :guilabel:`Content` field, and click :guilabel:`Add record`.
+
+Then, add the alias domain as your *own domain* by clicking :guilabel:`Use my own domain`, entering
+the alias domain (e.g., `subdomain.yourdomain.com`), clicking :guilabel:`Verify`, and then
+:guilabel:`I confirm, it's done`.
+
+Finally, go to your database and open the :guilabel:`Settings`. Under the :guilabel:`Alias Domain`
+field, enter the alias domain (e.g., `subdomain.yourdomain.com`), click :guilabel:`Create`, and then
+:guilabel:`Save`.
+=======
+.. _domain-name/external-email:
+>>>>>>> e9c3d4f2c4c886f0d7d85105f3e6064c4ccd2f06
 
 Use an external email provider
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
