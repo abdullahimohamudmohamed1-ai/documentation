@@ -117,8 +117,11 @@ Configure a physical rental product for product tracking
 
 .. important::
    To configure a physical rental product for product tracking, the **Inventory** app must be
-   installed, and :doc:`Lots & Serial Numbers must be enabled
-   <../../../inventory_and_mrp/inventory/product_management/product_tracking>`.
+   installed, and :guilabel:`Lots & Serial Numbers` must be enabled.
+
+   For rental products, only :guilabel:`By Unique Serial Number` tracking can be used. Selecting
+   :guilabel:`By Lots` instead results in an error message, since that setting doesn't apply to
+   rentals.
 
 Go to the :menuselection:`Rental app --> Products`, then click :guilabel:`New`. In the new product
 window, the :guilabel:`Rental` checkbox is already ticked by default.
