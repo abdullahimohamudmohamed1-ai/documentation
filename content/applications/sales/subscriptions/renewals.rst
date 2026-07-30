@@ -2,6 +2,10 @@
 Renew subscriptions
 ===================
 
+.. meta::
+   :description:  Learn how to manually create a renewal quotation for an Odoo subscription, from
+                  confirming the order to invoicing and registering payment.
+
 The foundation of any subscription business model is recurring payments. This is when customers
 reliably pay a regular amount at specific intervals, in exchange for access to a subscription
 product or service.
@@ -34,13 +38,12 @@ To open a subscription quotation, navigate to :menuselection:`Subscriptions app 
   - Only a singular product is required.
   - A subscription service counts as a product, as it is considered a recurring product.
 
-Subscription quotations **must** be confirmed, and payment from the customer for the
-initial subscription **must** be invoiced and registered in order to successfully open a *Renewal
+Subscription quotations **must** be confirmed, and payment from the customer for the initial
+subscription **must** be invoiced and registered in order to successfully open a *Renewal
 Quotation*.
 
 .. seealso::
-   For more information on the above process of confirming quotations and invoicing payments,
-   see:
+   For more information on the above process of confirming quotations and invoicing payments, see:
    - :doc:`../sales/send_quotations/create_quotations`
    - :doc:`../sales/send_quotations/get_paid_to_validate`
 
@@ -59,13 +62,13 @@ complete with a :guilabel:`Renewal Quotation` tag.
   :align: center
   :alt: Renewal quotation in the Odoo Subscriptions application.
 
-From here, a standard sales flow can occur to confirm the quotation. This typically begins
-by clicking :guilabel:`Send by Email`, which sends a copy of the quotation to the customer, by
-email, for them to confirm, and eventually, pay for.
+From here, a standard sales flow can occur to confirm the quotation. This typically begins by
+clicking :guilabel:`Send by Email`, which sends a copy of the quotation to the customer, by email,
+for them to confirm, and eventually, pay for.
 
 .. note::
-  In the chatter of the :guilabel:`Renewal Quotation`, it is mentioned that this subscription is
-  the renewal of the subscription from the original sales order.
+  In the chatter of the :guilabel:`Renewal Quotation`, it is mentioned that this subscription is the
+  renewal of the subscription from the original sales order.
 
 Once the :guilabel:`Renewal Quotation` is confirmed, it becomes a sales order, and a
 :guilabel:`Sales History` smart button appears at the top of the page.
