@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_credit_limit_blocker" model="ir.ui.view">
+        <field name="name">res.partner.form.credit.limit.blocker</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='property_payment_term_id']" position="after">
+                <field name="credit_limit" widget="monetary"/>
+                <field name="current_credit" widget="monetary" readonly="1"/>
+                <field name="available_credit" widget="monetary" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

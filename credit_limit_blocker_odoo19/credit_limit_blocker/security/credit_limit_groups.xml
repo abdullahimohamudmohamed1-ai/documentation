@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_credit_limit_manager" model="res.groups">
+        <field name="name">Credit Limit Manager (Override)</field>
+        <field name="comment">Allows the user to confirm Sales Orders and post customer invoices even when the credit limit is exceeded.</field>
+    </record>
+</odoo>
